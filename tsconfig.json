@@ -18,6 +18,8 @@
       "@assets": ["src/assets"],
       "@layouts/*": ["src/layouts/*"],
       "@layouts": ["src/layouts"],
+      "@paraglide/*": ["src/paraglide/*"],
+      "@paraglide": ["src/paraglide"],
     }
   }
 }
