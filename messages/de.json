@@ -1,0 +1,21 @@
+{
+  "$schema": "https://inlang.com/schema/inlang-message-format",
+  "example_message": "Guten Tag {username}",
+  "read_our_docs": "Lesen Sie unsere Dokumente",
+  "actions": {
+    "download": "Herunterladen",
+    "cancel": "Stornieren",
+    "proceed": "Fortfahren",
+    "next": "Nächste",
+    "previous": "Vorherige",
+    "login": "Login",
+    "sign_up": "Melden Sie sich an",
+    "update": "Aktualisieren",
+    "edit": "Bearbeiten",
+    "delete": "Löschen",
+    "remove": "Entfernen",
+    "select": "Wählen",
+    "select_all": "Alles auswählen",
+    "create": "Erstellen"
+  }
+}

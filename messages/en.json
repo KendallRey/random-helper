@@ -1,0 +1,21 @@
+{
+  "$schema": "https://inlang.com/schema/inlang-message-format",
+  "example_message": "Hello world {username}",
+  "read_our_docs": "Read our docs",
+  "actions": {
+    "download": "Download",
+    "cancel": "Cancel",
+    "proceed": "Proceed",
+    "next": "Next",
+    "previous": "Previous",
+    "login": "Login",
+    "sign_up": "Sign Up",
+    "update": "Update",
+    "edit": "Edit",
+    "delete": "Delete",
+    "remove": "Remove",
+    "select": "Select",
+    "select_all": "Select All",
+    "create": "Create"
+  }
+}
