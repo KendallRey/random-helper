@@ -17,5 +17,9 @@
     "select": "Wählen",
     "select_all": "Alles auswählen",
     "create": "Erstellen"
+  },
+  "welcome": {
+    "title": "Zufälliger Helfer",
+    "caption": "Nur eine Reihe zufälliger Hilfsfunktionen zum Verwenden oder Referenzieren."
   }
 }

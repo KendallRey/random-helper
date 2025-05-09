@@ -1,0 +1,25 @@
+{
+  "$schema": "https://inlang.com/schema/inlang-message-format",
+  "example_message": "Hola mundo {username}",
+  "read_our_docs": "Lea nuestros documentos",
+  "actions": {
+    "download": "Descargar",
+    "cancel": "Cancelar",
+    "proceed": "Proceder",
+    "next": "Próximo",
+    "previous": "Anterior",
+    "login": "Acceso",
+    "sign_up": "Inscribirse",
+    "update": "Actualizar",
+    "edit": "Editar",
+    "delete": "Borrar",
+    "remove": "Eliminar",
+    "select": "Seleccionar",
+    "select_all": "Seleccionar todo",
+    "create": "Crear"
+  },
+  "welcome": {
+    "title": "Ayudante aleatorio",
+    "caption": "Solo un montón de funciones auxiliares aleatorias para usar o hacer referencia."
+  }
+}

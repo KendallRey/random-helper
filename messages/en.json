@@ -2,6 +2,10 @@
   "$schema": "https://inlang.com/schema/inlang-message-format",
   "example_message": "Hello world {username}",
   "read_our_docs": "Read our docs",
+  "welcome": {
+    "title": "Random Helper",
+    "caption": "Just a bunch of random helper functions to use or reference."
+  },
   "actions": {
     "download": "Download",
     "cancel": "Cancel",
