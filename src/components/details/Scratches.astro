@@ -1,0 +1,63 @@
+---
+import { faker } from '@faker-js/faker';
+import s1 from '@/assets/details/scratch_1.svg';
+import s2 from '@/assets/details/scratch_2.svg';
+import s3 from '@/assets/details/scratch_3.svg';
+import s4 from '@/assets/details/scratch_4.svg';
+import s5 from '@/assets/details/scratch_5.svg';
+import s6 from '@/assets/details/scratch_6.svg';
+
+import slg1 from '@/assets/details/scratch_lg_1.svg';
+import slg2 from '@/assets/details/scratch_lg_2.svg';
+import slg3 from '@/assets/details/scratch_lg_3.svg';
+import slg4 from '@/assets/details/scratch_lg_4.svg';
+
+import sxl1 from '@/assets/details/scratch_xl_1.svg';
+import sxl2 from '@/assets/details/scratch_xl_2.svg';
+import sxl3 from '@/assets/details/scratch_xl_3.svg';
+
+const SCRATCHES = 20;
+const SmallImages = [
+  s1.src,
+  s2.src,
+  s3.src,
+  s4.src,
+  s5.src,
+  s6.src,
+];
+const LargeImages = [
+  slg1.src,
+  slg2.src,
+  slg3.src,
+  slg4.src,
+];
+const XLargeImages = [
+  sxl1.src,
+  sxl2.src,
+  sxl3.src,
+];
+const details = Array.from({ length: SCRATCHES }, () => {
+  const x = faker.number.int({ min: 0, max: 1920 });
+  const y = faker.number.int({ min: 0, max: 1080 });
+  const r = faker.number.int({ max: 360 });
+
+  const rng = faker.number.int({ max: 100 });
+  const imagePool = rng > 80 ? XLargeImages : rng > 60 ? LargeImages : SmallImages
+
+  return {
+    x,
+    y,
+    r,
+    src: imagePool[faker.number.int({ min: 0, max: imagePool.length - 1 })],
+    op: faker.number.float({ fractionDigits: 1, max: 1, min: 0.1 })
+  };
+});
+---
+<div style="position: fixed; inset: 0px;">
+  {details.map((_) => (
+    <img
+      src={_.src}
+      style={`opacity: ${_.op}; position: absolute; left: ${_.x}px; top: ${_.y}px; transform: rotate(${_.r}deg)`}
+    />
+  ))}
+</div>
