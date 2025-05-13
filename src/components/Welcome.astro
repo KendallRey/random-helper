@@ -1,9 +1,16 @@
 ---
-import { m } from '@paraglide/messages'
-import Content from '@/layouts/Content.astro';
-
+import { m } from "@paraglide/messages";
+import Content from "@/layouts/Content.astro";
 ---
-<Content style={{ display: 'flex', flexDirection: 'column', alignItems: "center", gap: 4 }}>
-  <h1>{m['welcome.title']()}</h1>
-  <p>{m['welcome.caption']()}</p>
+
+<Content
+  style={{
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    gap: 4,
+  }}
+>
+  <h1>{m["welcome.title"]()}</h1>
+  <p>{m["welcome.caption"]()}</p>
 </Content>

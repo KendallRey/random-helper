@@ -1,1 +1,1 @@
-export { default as AntButton } from './Button.astro';
+export { default as AntButton } from "./Button.astro";

@@ -1,12 +1,7 @@
 {
   "extends": "astro/tsconfigs/strict",
-  "include": [
-    ".astro/types.d.ts",
-    "**/*"
-  ],
-  "exclude": [
-    "dist"
-  ],
+  "include": [".astro/types.d.ts", "**/*"],
+  "exclude": ["dist"],
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "react",
@@ -20,7 +15,7 @@
       "@layouts/*": ["src/layouts/*"],
       "@layouts": ["src/layouts"],
       "@paraglide/*": ["src/paraglide/*"],
-      "@paraglide": ["src/paraglide"],
+      "@paraglide": ["src/paraglide"]
     }
   }
 }

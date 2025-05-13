@@ -1,7 +1,8 @@
 ---
-import { ReactAntButton } from './react/Button';
+import { ReactAntButton } from "./react/Button";
 const props = Astro.props;
 ---
-<ReactAntButton client:only='react' {...props} >
-  <slot/>
+
+<ReactAntButton client:only="react" {...props}>
+  <slot />
 </ReactAntButton>

@@ -1,32 +1,39 @@
 ---
-import Scratches from '@/components/details/Scratches.astro';
-import background from '@/assets/bg.svg';
+import Scratches from "@/components/details/Scratches.astro";
+import background from "@/assets/bg.svg";
 import { ClientRouter } from "astro:transitions";
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro Basics</title>
     <ClientRouter />
-	</head>
-	<body style={{ background: `url(${background.src})`, backgroundAttachment: 'fixed' }}>
-    <Scratches/>
-		<slot />
-	</body>
+  </head>
+  <body
+    style={{
+      background: `url(${background.src})`,
+      backgroundAttachment: "fixed",
+    }}
+  >
+    <Scratches />
+    <slot />
+  </body>
 </html>
 
 <style>
-	body {
-		margin: 0;
-		height: 100%;
-		font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+  body {
+    margin: 0;
+    height: 100%;
+    font-family:
+      Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans", Arial,
+      sans-serif;
     display: flex;
     justify-content: center;
     padding: 4rem;
-}
+  }
 </style>

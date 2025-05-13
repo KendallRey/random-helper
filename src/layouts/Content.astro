@@ -1,13 +1,13 @@
 ---
-const props = Astro.props
+const props = Astro.props;
 ---
+
 <div id="container" {...props}>
-  <slot/>
+  <slot />
 </div>
 
 <style>
-
-	#container {
+  #container {
     color: white;
     background: rgba(0, 0, 0, 0.7);
     flex-grow: 1;
@@ -16,6 +16,5 @@ const props = Astro.props
     min-height: calc(100vh - 8rem);
     justify-content: center;
     z-index: 1;
-	}
-
+  }
 </style>

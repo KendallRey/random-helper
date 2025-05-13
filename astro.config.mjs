@@ -1,9 +1,9 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
-import { paraglideVitePlugin } from '@inlang/paraglide-js';
+import { defineConfig } from "astro/config";
+import { paraglideVitePlugin } from "@inlang/paraglide-js";
 import node from "@astrojs/node";
 
-import react from '@astrojs/react';
+import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
@@ -14,10 +14,10 @@ export default defineConfig({
         project: "./project.inlang",
         outdir: "./src/paraglide",
       }),
-    ]
+    ],
   },
   output: "server",
   adapter: node({
-    mode: "standalone"
-  })
+    mode: "standalone",
+  }),
 });
